@@ -1,9 +1,11 @@
 package com.project.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.io.Serializable;
 
-import com.project.entity.ContactsMaster;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+import com.project.entity.ContactsMasterEntity;
 
-public interface ContactsMasterRepo extends JpaRepository<ContactsMaster, Integer>{
+public interface ContactsMasterRepo extends CrudRepository<ContactsMasterEntity, Serializable>{
 
 }
