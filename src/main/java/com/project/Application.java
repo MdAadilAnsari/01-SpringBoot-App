@@ -10,6 +10,7 @@ import com.project.repository.ContactsMasterRepo;
 @SpringBootApplication
 public class Application {
 
+	public static int a = 10;
 	public static void main(String[] args) {
 		ConfigurableApplicationContext config = SpringApplication.run(Application.class, args);
 		
